@@ -172,6 +172,10 @@
     height: 100%;
   }
 
+  .h-500 {
+    height: 500px !important;
+  }
+
   .h-fixed-200 {
     height: 100% !important;
   }
@@ -352,7 +356,8 @@
   }
 
   .logo {
-    height: 80px;
+    width: 140px;
+
   }
 
   .fs-7 {
@@ -472,7 +477,7 @@
   }
 
   .logo {
-    height: 90px;
+    width: 150px;
   }
 
   .border-xl-20 {
@@ -565,7 +570,7 @@
   }
 
   .logo {
-    height: 100px;
+    width: 150px;
   }
 
   .swiper-info {

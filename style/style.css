@@ -1,5 +1,8 @@
 :root {
-  --green: #16492f --red: #8d2337
+  --bs-success: #669f0a !important;
+  --bs-success-text-emphasis: #669f0a;
+  --bs-success-bg-subtle: #669f0a;
+  --bs-success-border-subtle: #669f0a;
 }
 
 html,
@@ -144,6 +147,63 @@ body {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px !important;
+}
+
+.border-avo {
+  --tw-border-opacity: 1;
+  border-color: rgb(102 159 10 / var(--tw-border-opacity)) !important;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.text-xs {
+  font-size: 0.75rem !important;
+  line-height: 1rem;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:bg-avo:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 159 10 / var(--tw-bg-opacity));
+}
+
+.input-flag {
+  background: url(../assets/Flag_of_Morocco.png) no-repeat scroll 14px 50%;
+  padding-left: 50px !important;
+  background-size: 30px;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -205,8 +265,49 @@ body {
 }
 
 
-.text-lame {
+.text-melon {
   color: #da1538;
+}
+
+.text-brown {
+  color: #885c18;
+}
+
+.text-avo {
+  color: #669f0a !important;
+}
+
+.text-avo-200 {
+  color: #f1f9e4 !important;
+}
+
+.text-avo-light {
+  color: #e0eecb !important;
+}
+
+.border-avo {
+  border: 1px solid #669f0a;
+}
+
+.bg-avo-light {
+  background-color: #e0eecb;
+}
+
+.bg-avo {
+  background-color: #669f0a;
+}
+
+.bg-avo-200 {
+  background-color: #f1f9e4;
+}
+
+.bg-gray {
+  background-color: #2f2f2f;
+}
+
+.text-sm {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem;
 }
 
 .h-screen {
@@ -215,6 +316,14 @@ body {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-80 {
+  width: 80%;
 }
 
 .w-5 {
@@ -230,8 +339,20 @@ body {
   height: 25%;
 }
 
+.h-20 {
+  height: 20%;
+}
+
 .h-100 {
   height: 100%;
+}
+
+.w-26 {
+  height: 26% !important;
+}
+
+.w-20 {
+  height: 20% !important;
 }
 
 .w-40 {
@@ -250,6 +371,14 @@ body {
   height: 600px !important;
 }
 
+.w-600 {
+  width: 600px !important;
+}
+
+.h-500 {
+  height: 300px !important;
+}
+
 .h-600-responsive {
   height: 200px !important;
 }
@@ -259,8 +388,17 @@ body {
 }
 
 .h-fixed-200 {
-  height: 400px !important;
+  height: 200px !important;
 }
+
+.h-fixed-100 {
+  height: 100px !important;
+}
+
+.h-fixed-150 {
+  height: 150px !important;
+}
+
 
 .h-fixed-300 {
   height: 100% !important;
@@ -268,6 +406,18 @@ body {
 
 .h-400 {
   height: 200px !important;
+}
+
+.w-400 {
+  width: 400px !important;
+}
+
+.w-300 {
+  width: 300px !important;
+}
+
+.w-250 {
+  max-width: 250px !important;
 }
 
 .pl-10 {
@@ -309,74 +459,7 @@ ul {
   font-size: 12px;
 }
 
-.numbers-size {
-  font-size: 1.6rem
-}
 
-.scale-1 {
-  transition: all ease-in-out 300ms;
-}
-
-
-
-.scale-1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-  border-radius: 20px;
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(0, 0, 0, 0.822) 99%);
-  z-index: 0;
-}
-
-.scale-2 {
-  transition: all ease-in-out 300ms;
-}
-
-
-
-.hide-desktop {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility .5s, opacity 0.5s linear;
-}
-
-.scale-2:hover>.hide-desktop {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.5s, opacity 0.5s linear;
-}
-
-.bg-gradient-red::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(121, 22, 22, 0.582) 99%);
-  z-index: 0;
-}
-
-.bg-gradient-green::before {
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(16, 97, 23, 0.473) 99%);
-}
-
-.bg-gradient-blue::before {
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(22, 17, 94, 0.185) 99%);
-}
 
 .row {
   margin: 0;
@@ -458,26 +541,7 @@ ul {
 
 }
 
-.swiper-info-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 100%;
-  top: 70%;
-}
 
-.swiper-info {
-  padding: 10px 10px 10px 30px;
-  border-radius: 0;
-}
-
-.swiper-info-text h1 {
-  font-size: 20px;
-}
-
-.swiper-info-text p {
-  font-size: 12px;
-}
 
 .text-green {
   color: #16492f;
@@ -487,7 +551,7 @@ ul {
   color: #8d2337;
 }
 
-.bg-lame {
+.bg-melon {
   background-color: #fafff3;
 }
 
@@ -499,7 +563,7 @@ ul {
   background-color: #16492f;
 }
 
-.bg-menu {
+/* .bg-menu {
   position: absolute;
   z-index: 99;
   top: 0;
@@ -517,7 +581,7 @@ ul {
   overscroll-behavior: contain;
   position: fixed;
   background: #fff
-}
+} */
 
 .active {
   font-weight: bold !important;
@@ -563,7 +627,7 @@ ul {
 }
 
 .logo {
-  height: 70px;
+  width: 100px;
 }
 
 .border-20 {
@@ -574,6 +638,24 @@ ul {
   border-color: #8d2337;
 }
 
+.bg-menu {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: 0.7s;
+  background: rgba(224, 238, 203, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.active-menu {
+  transform: translateX(0);
+  overscroll-behavior: contain;
+  position: fixed;
+}
 
 .border-green {
   border-color: #16492f;
@@ -586,98 +668,4 @@ ul {
   height: 100%;
   background-position: center;
   object-fit: cover;
-}
-
-
-.dropdown-content {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.4s, opacity 0.4s linear;
-  margin-top: 30px;
-  position: absolute;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #8d2337;
-  color: #fff;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 100;
-}
-
-
-.dropdown-content a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #16492f;
-}
-
-
-.dropdown-li:hover .dropdown-content {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility .4s, opacity 0.4s linear;
-}
-
-.hover-opacity:hover {
-  opacity: .6;
-  color: #fff;
-}
-
-.left-image-position {
-  max-width: 84% !important;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 8%;
-  min-height: 240px
-}
-
-.right-image-position {
-  max-width: 84% !important;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 8%;
-  min-height: 240px
-}
-
-.page-title {
-  background-image: url("../assets/camion-carriere-sjl-afrique-europe.jpg");
-  min-height: 150px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  padding: 40px 50px;
-}
-
-.page-title::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(#8d233638 0%, #8d2336 80%);
-  top: -1px;
-  right: 0px;
-  opacity: 100%;
-  z-index: 1;
-  mix-blend-mode: multiply;
-  z-index: 0;
-}
-
-.page-title h1 {
-  color: #fff;
-  position: relative;
-  z-index: 1;
 }
